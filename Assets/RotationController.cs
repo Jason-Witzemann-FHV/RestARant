@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class RotationController : MonoBehaviour
 {
-
+    [SerializeField] private float rotationSpeed;
     // Update is called once per frame
     void Update()
     {
@@ -15,7 +15,7 @@ public class RotationController : MonoBehaviour
 
             if (screenTouch.phase == TouchPhase.Moved)
             {
-                transform.Rotate(0f, -screenTouch.deltaPosition.x, 0f);
+                transform.Rotate(0f, -screenTouch.deltaPosition.x*rotationSpeed, 0f);
             }
         }
     }
