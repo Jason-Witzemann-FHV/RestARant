@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Unbenannt
-    second: {fileID: 2800000, guid: 383895e19bfb6554983007df69390008, type: 3}
+    second: {fileID: 2800000, guid: b4eb9df497d28c24c8d979ddc2f1534a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Wood050_2K_Color
-    second: {fileID: 2800000, guid: 0c9348cf491d9ac4380cc8e48c1e462a, type: 3}
+    second: {fileID: 2800000, guid: ba7cc9c532c898d4db983534255dc052, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
