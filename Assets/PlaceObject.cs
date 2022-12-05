@@ -11,7 +11,15 @@ public class PlaceObject : MonoBehaviour
     {
         if (_tracker != null)
         {
-        transform.position = _tracker.position;
+            transform.position = _tracker.position;
         }
+    }
+
+    public bool IsTrackervisible()
+    {
+        if (_tracker == null)
+            return false;
+        else
+            return true;
     }
 }
