@@ -25,14 +25,14 @@ public class OptionController : MonoBehaviour
         if (isActive)
         {
             SetColorToActive();
-            // ShowMenuItemAndResetScale();
+            ShowMenuItemAndResetScale();
             SetInformationDescription();
             ShowInformationToggle();
         }
         else
         {
             SetColorToInactive();
-            // HideMenuItem();
+            HideMenuItem();
             HideInformationToggle();
         }
     }
