@@ -1,9 +1,14 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class OptionController : MonoBehaviour
 {
-    [SerializeField] private GameObject menuItem;
+    [SerializeField] private GameObject foodObject;
+    [SerializeField] [TextArea] private string foodDescription;
+    [SerializeField] private GameObject informationDescriptionObject;
+    [SerializeField] private GameObject informationToggleObject;
+
     private Toggle toggleComponent;
     private Color activeColor;
     private Color inactiveColor;
@@ -20,12 +25,15 @@ public class OptionController : MonoBehaviour
         if (isActive)
         {
             SetColorToActive();
-            SpawnMenuItem();
+            // ShowMenuItemAndResetScale();
+            SetInformationDescription();
+            ShowInformationToggle();
         }
         else
         {
             SetColorToInactive();
-            DespawnMenuItem();
+            // HideMenuItem();
+            HideInformationToggle();
         }
     }
 
@@ -33,25 +41,43 @@ public class OptionController : MonoBehaviour
     {
         ColorBlock colors = toggleComponent.colors;
         colors.normalColor = activeColor;
+        colors.selectedColor = activeColor;
         toggleComponent.colors = colors;
     }
 
-    private void SpawnMenuItem()
+    private void ShowMenuItemAndResetScale()
     {
-        menuItem.GetComponentInParent<Transform>().transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
-        menuItem.SetActive(true);
+        foodObject.GetComponentInParent<Transform>().transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+        foodObject.SetActive(true);
+    }
+
+    private void SetInformationDescription()
+    {
+        informationDescriptionObject.GetComponent<TextMeshProUGUI>().text = foodDescription;
+    }
+
+    private void ShowInformationToggle()
+    {
+        informationToggleObject.SetActive(true);
     }
 
     private void SetColorToInactive()
     {
         ColorBlock colors = toggleComponent.colors;
         colors.normalColor = inactiveColor;
+        colors.selectedColor = inactiveColor;
         toggleComponent.colors = colors;
     }
 
 
-    private void DespawnMenuItem()
+    private void HideMenuItem()
     {
-        menuItem.SetActive(false);
+        foodObject.SetActive(false);
+    }
+
+    private void HideInformationToggle()
+    {
+        informationToggleObject.GetComponent<Toggle>().isOn = false;
+        informationToggleObject.SetActive(false);
     }
 }
