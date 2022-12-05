@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b6807f1e8ee3e354ba116d83a24cff19
+guid: 83faf7a3f2ccdd54ea8dbb667eab1cde
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -17,90 +17,50 @@ ModelImporter:
     second: BezierCurve.002-5.001|IdleHover_BezierCurve.002-5.001
   externalObjects:
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Burger_Material
-    second: {fileID: 2100000, guid: d66d080e70b93ea4990003ef749c67ec, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cabbage2
-    second: {fileID: 2100000, guid: f7ed5e23fb94e0b40aa401c128c299a9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cheese.001
-    second: {fileID: 2100000, guid: ab6b1de8617d73241b4321f47da5757f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Grilled Steak
-    second: {fileID: 2100000, guid: 245552b71ab47f54ab595dff7de4da99, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.006
-    second: {fileID: 2100000, guid: c0b4b1cde3a36b9499241020a441cdaa, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.008
-    second: {fileID: 2100000, guid: 48d7654aaa23d6d46b3f38ad69551856, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.013
-    second: {fileID: 2100000, guid: caeb51d1b55349d479ed03bd30c34dca, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Semmel_ganz_Model_50k_ZB001_UV_u1_v1
-    second: {fileID: 2100000, guid: 8064fa8a416d77945b61f356a4603b7a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: bigplate
-    second: {fileID: 2100000, guid: 6f535bf3d70671f4287da42ab9f24504, type: 2}
-  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Burger_Material_baseColor
-    second: {fileID: 2800000, guid: b267f077a3e85e14c967ddf247e332b8, type: 3}
+    second: {fileID: 2800000, guid: 79a2edf45501ed6409bf9ca0964d9fe7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Burger_Material_normal
-    second: {fileID: 2800000, guid: db2a5d0a41844de49a4d1e09b6b6b631, type: 3}
+    second: {fileID: 2800000, guid: 0774b30b1f4b695418c2d4a77a9e3cc7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Cabbage2_baseColor
-    second: {fileID: 2800000, guid: ab9af25a497cc274994510ccf0f17cd6, type: 3}
+    second: {fileID: 2800000, guid: e27fff1bd2f414148b6b0a35a6f3af35, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Cheese_baseColor
-    second: {fileID: 2800000, guid: 93a3531fbfe639046919582a4c2cc70e, type: 3}
+    second: {fileID: 2800000, guid: 0d1c77ca0f9ded1439543527185b1353, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Cheese_normal
-    second: {fileID: 2800000, guid: dffa86c62adcc1b43a9037d23e09750f, type: 3}
+    second: {fileID: 2800000, guid: 76214f80664a450459aad3fbee2fce9d, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Semmel_ganz_Model_50k_ZB001_UV_u1_v1_baseColor
-    second: {fileID: 2800000, guid: e84c0ba306a2037498129570044a74c8, type: 3}
+    second: {fileID: 2800000, guid: 5b7be0633cfff8348b657585578c299e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Semmel_ganz_Model_50k_ZB001_UV_u1_v1_emissive
-    second: {fileID: 2800000, guid: 98659f819d1b16e45ba02b5529c4658c, type: 3}
+    second: {fileID: 2800000, guid: 394fe3ae22ab5454ea40b787cbb26b27, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Semmel_ganz_Model_50k_ZB001_UV_u1_v1_normal
-    second: {fileID: 2800000, guid: ff33a7cd9df02244c9e5a65018f30a60, type: 3}
+    second: {fileID: 2800000, guid: e7bc1415c8ff32644bb52c6662d88a29, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: food_0012_color_2k
+    second: {fileID: 2800000, guid: f014bd6ac6f14f744afdfaa2d4868052, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -131,15 +91,15 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.5
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -182,7 +142,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.5
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
