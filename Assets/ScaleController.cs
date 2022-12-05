@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScaleController : MonoBehaviour
 {
-    private Vector3 initialScale;
+    [SerializeField] private Vector3 initialScale;
     private float initialDistance;
 
     // Update is called once per frame
@@ -41,5 +41,10 @@ public class ScaleController : MonoBehaviour
                 transform.localScale = initialScale * factor;
             }
         }
+    }
+
+    public void resetScale()
+    {
+        transform.localScale = initialScale;
     }
 }
