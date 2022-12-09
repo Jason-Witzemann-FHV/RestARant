@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class ScaleController : MonoBehaviour
 {
-    [SerializeField] private Vector3 initialScale;
     [SerializeField] private GameObject resetButton;
+    private Vector3 initialScale, originalScale;
     private float initialDistance;
+
+    private void Start()
+    {
+        originalScale = transform.localScale;
+    }
 
     // Update is called once per frame
     void Update()
@@ -47,7 +52,7 @@ public class ScaleController : MonoBehaviour
 
     public void resetScale()
     {
-        transform.localScale = initialScale;
+        transform.localScale = originalScale;
         resetButton.SetActive(false);
     }
 }
